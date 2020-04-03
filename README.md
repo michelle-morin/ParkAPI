@@ -116,7 +116,7 @@ _To view/edit the source code of this API, open the contents of the ParksLookup.
 * C#
 * .NET Core 2.2.106
 * dotnet script 0.50.1
-* Visual Studio Code 1.43.1
+* Entity Framework Core 2,2
 * MySQL
 * MySQL Workbench
 * Swagger 2.0 documentation (swagger.json)
