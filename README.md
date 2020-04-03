@@ -17,14 +17,11 @@ _This API allows a user to create, read, update, and delete state and national p
 * A user is able to view details for a specific park, based on ParkId.
 
 ## Endpoints:
-### All endpoints have a host of 'localhost:5004' and base path of '/api'
+### All endpoints have a host of 'localhost:5000' and base path of '/api'
 * '/parks'
   - GET request
   - returns a list of all parks from the ``michelle_morin`` database table ``parks``.
-* '/parks?name=""&agency=""&state=""&campsites=""'
-  - GET request
-  - accepts optional query parameters of name, agency, state, and campsites
-  - a successful (200 OK) request returns a list of all parks from the ``michelle_morin`` database table ``parks`` matching input search parameters for name, agency, state, and campsites.
+  - optionally accepts query parameters of name, agency, state, and campsites (e.g., '/parks?name="zion"&agency="national"&state="utah"&campsites=""'), and returns a list of all parks from the ``michelle_morin`` database table ``parks`` matching input search parameters for name, agency, state, and campsites.
 * '/parks'
   - POST request
   - requires a park object (formatted in JSON) in the body of the API request
@@ -35,8 +32,9 @@ _This API allows a user to create, read, update, and delete state and national p
   - a successful request (200 OK) returns a single park object from the ``michelle_morin`` database table ``parks`` based on ParkId
 * '/parks/{id}'
   - PUT request
-  - requires a park object (formatted in JSON) in the body of the API request; the park object must have a ParkId matching an existing entry in the ``parks`` table of the ``michelle_morin`` database.
-  - a successful (200 OK) request returns nothing, and instead updates an existing entry having a ParkId matching the input id parameter in the ``parks`` table of the ``michelle_morin`` database
+  - requires an id parameter (ParkId of the park object) in the path of the API request; the id parameter must match a ParkId of an existing entry in the ``parks`` table of the ``michelle_morin`` database
+  - requires a park object (formatted in JSON) in the body of the API request
+  - a successful (200 OK) request returns nothing, and instead updates an existing park entry in the ``parks`` table of the ``michelle_morin`` database
 * '/parks/{id}'
   - DELETE request
   - requires an id parameter (ParkId of the park object) in the path of the API request
