@@ -21,7 +21,7 @@ _This API allows a user to create, read, update, and delete state and national p
 * '/parks'
   - GET request
   - returns a list of all parks from the ``michelle_morin`` database table ``parks``.
-  - optionally accepts query parameters of name, agency, state, and campsites (e.g., '/parks?name="zion"&agency="national"&state="utah"&campsites=""'), and returns a list of all parks from the ``michelle_morin`` database table ``parks`` matching input search parameters for name, agency, state, and campsites.
+  - optionally accepts query parameters of name, agency, state, and campsites to filter the list of results (e.g., '/parks?name=zion&state=utah' returns a list of all parks from the ``michelle_morin`` database table ``parks`` having a name "zion" and a state "utah")
 * '/parks'
   - POST request
   - requires a park object (formatted in JSON) in the body of the API request
