@@ -1,4 +1,4 @@
-# Parks Lookup API
+# Parks Lookup API (version 1.0)
 
 #### _Building an API Independent Project for Epicodus_
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-_This API allows a user to create, read, update, and delete state and national parks._
+_This API allows a user to create, read, update, and delete state and national parks. All endpoints of the Parks Lookup API have a defualt version 1.0. Requests made to any endpoint without specifying a version number or specifying a nonexistent version number (as a query parameter '?v=1.0' in the path of the request) will default to version 1.0. Request responses to any endpoint contain a respone header named api-supported-versions, which lists all available API versions for that endpont (1.0 is the only version currently supported for each endpoint)._
 
 ## Specification user stories:
 * A user is able to read (GET) a list of all parks in the database.
@@ -16,8 +16,7 @@ _This API allows a user to create, read, update, and delete state and national p
 * A user is able to delete (DELETE) an existing park entry in the database.
 * A user is able to view details for a specific park, based on ParkId.
 
-## Endpoints:
-### All endpoints have a host of 'localhost:5000' and base path of '/api'
+### All endpoints of the Parks Lookup API use host 'localhost:5000' and base path '/api'
 * '/parks'
   - GET request
   - returns a list of all parks from the ``michelle_morin`` database table ``parks``.
@@ -113,12 +112,13 @@ _To view/edit the source code of this API, open the contents of the ParksLookup.
 * Git 2.23.0
 * C#
 * .NET Core 2.2.106
+* Entity Framework Core 2.2
 * dotnet script 0.50.1
-* Entity Framework Core 2,2
 * MySQL
 * MySQL Workbench
 * Swagger 2.0 documentation (swagger.json)
 * NSwag ASP.NET Core middleware
+* Nuget Versioning package 2.2.0 (Microsoft.AspNetCore.Mvc.Versioning)
 
 ## License
 
