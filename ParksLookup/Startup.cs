@@ -24,6 +24,13 @@ namespace ParksLookup
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+			services.AddApiVersioning(config =>
+			{
+				config.DefaultApiVersion = new ApiVersion(1, 0);
+				config.AssumeDefaultVersionWhenUnspecified = true;
+				config.ReportApiVersions = true;
+			});
+
 			services.AddSwaggerDocument();
 		}
 
