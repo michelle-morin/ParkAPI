@@ -23,6 +23,8 @@ namespace ParksLookup
         opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+			services.AddSwaggerDocument();
 		}
 
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -35,6 +37,9 @@ namespace ParksLookup
 			{
 				app.UseHsts();
 			}
+
+			app.UseOpenApi();
+    	app.UseSwaggerUi3();
 
 			// app.UseHttpsRedirection();
 			app.UseMvc();
