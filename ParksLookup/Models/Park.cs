@@ -9,6 +9,6 @@ namespace ParksLookup.Models
     public string Agency { get; set; }
     public string State { get; set; }
     public string Description { get; set; }
-    public int Campsites { get; set; }
+    public bool Campsites { get; set; }
   }
 }
