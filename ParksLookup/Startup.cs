@@ -24,6 +24,14 @@ namespace ParksLookup
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+			services.AddCors(o => o.AddPolicy 
+			("MyPolicy", builder => {
+				builder.AllowAnyOrigin()
+					.AllowAnyMethod()
+					.AllowAnyHeader()
+					.AllowCredentials();
+			}));
+
 			services.AddApiVersioning(config =>
 			{
 				config.DefaultApiVersion = new ApiVersion(1, 0);

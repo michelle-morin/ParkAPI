@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ParksLookup.Models;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Cors;
 
 namespace ParksLookup.Controllers
 {
@@ -45,6 +46,7 @@ namespace ParksLookup.Controllers
     }
 
     // POST '/api/parks'
+    [EnableCors("MyPolicy")]
     [HttpPost]
     public void Post([FromBody] Park park)
     {
