@@ -1,8 +1,7 @@
 # Parks Lookup API (version 1.0)
 
-#### _Building an API Independent Project for Epicodus_
-
-#### By: **Michelle Morin**, April 3, 2020
+#### By: Michelle Morin, Jamison Cozart, Brandan Sayarath, Drake Wilcox
+#### May 11-13, 2020
 
 ## Description
 
@@ -90,8 +89,8 @@ _Add the MySQL environment variable to the System PATH. Instructions for Windows
 
 _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd desktop``
-* ``git clone https://github.com/michelle-morin/ParksLookup.Solution``
-* ``cd ParksLookup.Solution/ParksLookup``
+* ``git clone https://github.com/michelle-morin/ParkAPI``
+* ``cd ParkAPI/ParksLookup``
 
 _Confirm that you have navigated to the ParksLookup directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
 
@@ -104,7 +103,7 @@ _Run this application by entering the following command in Terminal (macOS) or P
 * ``dotnet run`` or ``dotnet watch run``
 * With this API running, open the [Swagger UI](http://localhost:5000/swagger/index.html#/) to view and test the different routes of this API!
 
-_To view/edit the source code of this API, open the contents of the ParksLookup.Solution directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal at the root of the ParksLookup.Solution directory)._
+_To view/edit the source code of this API, open the contents of the ParkAPI directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal at the root of the ParkAPI directory)._
 
 ## Technologies Used
 
@@ -124,4 +123,4 @@ _To view/edit the source code of this API, open the contents of the ParksLookup.
 
 Licensed under the MIT license.
 
-&copy; 2020 - Michelle Morin
+&copy; 2020 - Michelle Morin, Jamison Cozart, Brandan Sayarath, Drake Wilcox
