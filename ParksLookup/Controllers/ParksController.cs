@@ -20,6 +20,7 @@ namespace ParksLookup.Controllers
     }
 
     // GET '/api/parks'
+    [EnableCors("MyPolicy")]
     [HttpGet]
     public ActionResult<IEnumerable<Park>> Get(string name, string agency, string state, bool? campsites)
     {
@@ -62,6 +63,7 @@ namespace ParksLookup.Controllers
     }
 
     // PUT '/api/parks/{id}'
+    [EnableCors("MyPolicy")]
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] Park park)
     {
@@ -71,6 +73,7 @@ namespace ParksLookup.Controllers
     }
 
     // DELETE '/api/parks/{id}'
+    [EnableCors("MyPolicy")]
     [HttpDelete("{id}")]
     public void Delete(int id)
     {
