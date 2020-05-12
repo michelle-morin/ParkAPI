@@ -18,5 +18,6 @@ namespace ParksLookup.Models
     public string Description { get; set; }
     [Required]
     public bool Campsites { get; set; }
+    public string ImgUrl { get; set; }
   }
 }
