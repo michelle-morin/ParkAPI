@@ -6,6 +6,7 @@
 ## Description
 
 _This API allows a user to create, read, update, and delete state and national parks. All endpoints of the Parks Lookup API have a defualt version 1.0. Requests made to any endpoint without specifying a version number or specifying a nonexistent version number (as a query parameter '?v=1.0' in the path of the request) will default to version 1.0. Request responses to any endpoint contain a respone header named api-supported-versions, which lists all available API versions for that endpont (1.0 is the only version currently supported for each endpoint)._
+_Please check out the corresponding [client application](https://github.com/michelle-morin/react-park-client) to interact with this API._
 
 ## Specification user stories:
 * A user is able to read (GET) a list of all parks in the database.
